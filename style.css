@@ -1,0 +1,239 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+   --cor-de-fundo: #000;
+   --cor-de-link: #ffff;
+   --branco: #ffffff;
+   --roxo: #da51c3;
+   --font-principal: "Raleway", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: var(--font-principal);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+p{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--branco);
+}
+
+h3{
+    color: var(--roxo);
+}
+
+h2{
+    color: var(--roxo);
+    font-size: 20px;
+}
+
+h4{
+    color: var(--branco);
+  
+}
+  
+ol, ul,li {
+    list-style: none;
+}
+
+/*Estilos para link*/
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Sessão Menu*/
+
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 100px;
+    padding: 20 px 80px;
+    position: relative;
+}
+
+/* Estilos para a lista do menu */
+.menu__list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 100px;
+}
+
+/* Estilos para o container do título */
+.title__div {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-around; 
+    
+}
+
+/* Estilos para o container do título */
+.title__container{
+    margin-right: 50px; 
+}
+
+/* Estilos para a biografia no título */
+.title__bio {
+    margin-bottom: 24px;
+    font-size: 3.25rem;
+  }
+
+/* Estilos para a imagem de perfil */
+.title__profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%
+}
+
+.about__title{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 40px;
+}
+
+.about__container{
+   display:inline;
+   align-items: center;
+   justify-content:space-around;
+}
+
+.about__paragraph{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+
+.skills__title{
+   display: inline;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.skills__box{
+    display: inline;
+    align-items: center;
+
+}
+
+
+
+  
+
+/* Estilos para itens da lista do menu */
+.menu__list__item{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para links dentro dos itens do menu */
+.menu__list__item a{
+    text-decoration: none;
+    color: var(#ffffff);
+    font-size: 1.1rem;
+}
+
+.menu__list__item a:hover{
+    text-decoration:solid;
+    
+}
+
+/* Estilos para botões dentro dos itens do menu */
+.menu__list__item button{
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}  
+
+.academic{
+} 
+
+/* Estilos para a rede social no título */
+.title__network {
+    display: flex;
+    justify-content: space-around; /* Espaçamento uniforme dos itens */
+}
+  
+  /* Estilos para itens da rede social */
+  .title__network__item {
+    list-style: none; /* Remove os marcadores de lista */
+}
+ 
+  
+  
+
+/*footeer*/
+.footer{
+    background-color: var(--roxo);
+    padding-bottom: 25px;
+    padding-top:25px;
+    text-align: center;
+    color:var(--branco);
+    font-size: 15px;
+   
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}

@@ -8,6 +8,7 @@ coloque nas sessões indicadas*/
    --branco: #ffffff;
    --roxo: #da51c3;
    --font-principal: "Raleway", sans-serif;
+   --cinza: #726969;
 }
 
 *{
@@ -22,7 +23,7 @@ body{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    line-height: 1;
+   
 }
 
 p{
@@ -30,20 +31,6 @@ p{
     margin: 0;
     padding: 0;
     color: var(--branco);
-}
-
-h3{
-    color: var(--roxo);
-}
-
-h2{
-    color: var(--roxo);
-    font-size: 20px;
-}
-
-h4{
-    color: var(--branco);
-  
 }
   
 ol, ul,li {
@@ -58,14 +45,30 @@ a{
 
 /*Sessão Menu*/
 
-section.menu{
+.infousuario{
+    background-color: var(--preto);
+    padding-top: 30px 30px;
+    
+}
+
+.resumo{
+    background-color: var(--cinza);
+   
+}
+.menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 0;
     margin-left: 100px;
-    padding: 20 px 80px;
+    padding: 20px 80px;
     position: relative;
+}
+
+.menu__title{
+    display: flex;
+    justify-content: space-between;
+    color:var(--roxo);
 }
 
 /* Estilos para a lista do menu */
@@ -74,126 +77,237 @@ section.menu{
     align-items: center;
     gap: 30px;
     margin-right: 100px;
+    
 }
 
 /* Estilos para o container do título */
 .title__div {
     display: flex;
-    flex-direction: row-reverse; 
-    justify-content: space-around; 
-    
+    flex-direction: row-reverse;    
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Estilos para o container do título */
 .title__container{
     margin-right: 50px; 
+   
 }
 
 /* Estilos para a biografia no título */
-.title__bio {
-    margin-bottom: 24px;
-    font-size: 3.25rem;
-  }
+.title__bio{
+   margin-left: 60px;
+   text-align: center;
+   font-size: 3.0rem;
+   color: var(--branco);
+   font-weight: normal;
+   
+}
+
+.title__subsection {
+    display:flex;
+    justify-content:space-around;
+    color: var(--branco);
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 50px;
+    
+}
 
 /* Estilos para a imagem de perfil */
 .title__profile {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 80px; 
+   
+}
+
+.about__container{
+    justify-content:space-around;
+    align-items: center;
+    margin: 60px 60px;
+    
 }
 
 .about__title{
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content:center;
     font-size: 40px;
-}
-
-.about__container{
-   display:inline;
-   align-items: center;
-   justify-content:space-around;
+    padding-top: 30px;
+    color: var(--roxo);
+    font-weight: normal;
 }
 
 .about__paragraph{
     display: flex;
     justify-content:space-around;
     text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.3rem;
+
 }
+
 
 .skills__title{
-   display: inline;
+   display:flex;
    align-items: center;
    justify-content: space-around;
+   color: var(--roxo);
+   font-size: 2.5rem;
+   font-weight: normal;
 }
 
-.skills__box{
-    display: inline;
-    align-items: center;
+.skills__line{
+    display:flex;
+    justify-content: center;
 
 }
 
-
-
-  
-
-/* Estilos para itens da lista do menu */
-.menu__list__item{
-    list-style: none;
+.academic__title{
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    color: var(--roxo);
+    font-size: 2.5rem;
+    font-weight: normal;
+
 }
 
-/* Estilos para links dentro dos itens do menu */
-.menu__list__item a{
-    text-decoration: none;
-    color: var(#ffffff);
-    font-size: 1.1rem;
+.academic__courses__box{
+    display: flex;
+    justify-content: center;
+    color: var(--branco);
+    font-weight: normal;
+    font-size: 1.3rem;
+
 }
 
-.menu__list__item a:hover{
-    text-decoration:solid;
+.academic__courses__item__title{
+    display:block;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--branco);
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.academic__courses__item__subtitle{
+    display: flex;
+    justify-content: center;
+    color: var(--branco);
+    font-weight: normal;
+
+}
+
+.experience__section__title{
+    display: flex;
+    justify-content: center;
+    color: var(--roxo);
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.experience__box{
+    display: flex;
+    justify-content: center;
+    color: var(--branco);
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.experience__title{
+    display: flex;
+    justify-content: center;
+    color: var(--branco);
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.experience__text{
+    display: flex;
+    justify-content: center;
+    color: var(--branco);
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.formcontato__title{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 20px;
     
 }
 
-/* Estilos para botões dentro dos itens do menu */
-.menu__list__item button{
-    color: #ffffff;
+.experience__repo, 
+.experience__demo{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+    cursor: pointer; 
+    padding: 8px 16px; 
+    border-radius: 8px; 
+
+}
+
+.formcontato__form{
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: var(--branco);
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+.formcontato__input[type="text"],
+.formcontato__input[type="email"],
+.formcontato__input textarea{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--cinza);
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.formcontato__botao[type="enviar"]{
+    box-sizing: border-box;
+    padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
+    color: var(--preto);
+    font-size: 1em;
     cursor: pointer;
-}  
-
-.academic{
-} 
-
-/* Estilos para a rede social no título */
-.title__network {
     display: flex;
-    justify-content: space-around; /* Espaçamento uniforme dos itens */
-}
+    margin-top: 12px; 
   
-  /* Estilos para itens da rede social */
-  .title__network__item {
-    list-style: none; /* Remove os marcadores de lista */
-}
- 
-  
-  
+} 
 
 /*footeer*/
 .footer{
-    background-color: var(--roxo);
-    padding-bottom: 25px;
-    padding-top:25px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cinza);
+    padding-bottom: 30px;
+    padding-top:30px;
     text-align: center;
     color:var(--branco);
-    font-size: 15px;
-   
+    font-size: 15px;  
+    flex-direction: column;
 }
+
+/* Estilos para a rede social no título */
+.title__network__item{
+   display: inline;
+}
+
+  
+
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/

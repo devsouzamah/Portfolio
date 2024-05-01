@@ -49,8 +49,7 @@ a{
 
 .infousuario{
     background-color: var(--preto);
-    
-    
+      
 }
 
 .menu{
@@ -217,10 +216,8 @@ a{
 }
 
 /* Estilos para sessão projetos */
-
 .repositorios{
-    height: 600px;
-    
+    height: 600px;   
    
 }
 .experience__section__title{
@@ -305,7 +302,7 @@ a{
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 1px solid var(--cinza);
+    border: 1px solid var(--outerspace);
     border-radius: 4px;
     cursor: pointer;
     
@@ -355,15 +352,79 @@ utilize como referência os breakpoints @media abaixo*/
 
 /* Menu */
 
+.menu__title{
+    flex-wrap: wrap
+   
+
+}
+.menu{
+    
+    align-items: center;
+    padding: 20px;
+    font-size: 1.0rem;
+   
+  
+}
+
 /*title*/
+.title__profile{
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-items: center;
+    
+} 
+.title__div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center; 
+       
+}
 
-/*Skills*/
+/*sessão sobre mim*/
+.resumo{
+    height: auto;
+    
+}
 
-/*Hobbies*/
+.skills__line{
+    display:flex;
+    justify-content: center;
+   
 
-/*Experiências acadêmicas*/
+}
 
-/*Expeirência profissional*/
+
+/* formação acadêmica */
+.formacao{
+    height: auto;
+    padding-bottom: 30px;
+    align-items: center;
+    
+}
+
+/*projetos*/
+
+.repositorios{
+    justify-content:space-between;
+}
+
+.experience__repo{
+    flex-direction: column;
+    margin-left: 200px;
+    padding: 8px 16px; 
+    border-radius: 8px; 
+}
+
+.experience__demo{
+    flex-direction: column;
+    margin-left: 30px;
+    padding: 8px 16px; 
+    border-radius: 8px; 
+
+}
 
 }
 

@@ -49,7 +49,7 @@ a{
 
 .infousuario{
     background-color: var(--preto);
-      
+     
 }
 
 .menu{
@@ -60,12 +60,15 @@ a{
     margin-left: 100px;
     padding: 20px 80px;
     position: relative;
+  
+   
 }
 
 .menu__title{
     display: flex;
     justify-content: space-between;
-    color:var(--cherryblossompink);
+    color:var(--cherryblossompink);   
+    
 }
 
 /* Estilos para a lista do menu */
@@ -74,15 +77,23 @@ a{
     align-items: center;
     gap: 30px;
     margin-right: 100px;
+    font-size: 1.0rem;
     
 }
 
 /* Estilos para o container do título */
 .title__div {
     display: flex;
-    flex-direction: row-reverse;    
+    flex-direction:row-reverse;   
     justify-content: space-around;
     align-items: center;
+}
+
+.title__profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ 
 }
 
 /* Estilos para o container do título */
@@ -109,15 +120,6 @@ a{
     font-weight: normal;
     margin-bottom: 50px;
     
-}
-
-/* Estilos para a imagem de perfil */
-.title__profile {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin-right: 80px; 
-   
 }
 
 /*Estilos para sessão sobre mim */
@@ -235,27 +237,28 @@ a{
     justify-content: center;
     color: var(--branco);
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
    
 }
 
-
-.experience__repo{
-    flex-direction: column;
-    margin-left: 500px;
-    padding-top: 20px; 
-    padding: 8px 16px; 
-    border-radius: 8px; 
+.experience__description{
+    width: 80%;
+    display: inline-block;
+    margin-left: 250px;
+    justify-content:center;
 }
 
+
+.experience__repo
 .experience__demo{
-    flex-direction: column;
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     padding-top: 20px; 
     padding: 8px 16px; 
     border-radius: 8px; 
-
 }
+
 
 .experiencia__botao--repo, 
 .experiencia__botao--demo{ 
@@ -347,22 +350,24 @@ a{
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
 
+/*Desktop*/
+@media (min-width: 1281px){
+    
+}
+
 /*Tablet*/
-@media (min-width: 768px) {
+@media screen and(min-width: 768px){
 
 /* Menu */
 
 .menu__title{
-    flex-wrap: wrap
-   
-
+    display: flex;
+      
 }
 .menu{
-    
     align-items: center;
-    padding: 20px;
-    font-size: 1.0rem;
-   
+    padding: 10px;
+    font-size: 1.0rem;  
   
 }
 
@@ -376,10 +381,8 @@ utilize como referência os breakpoints @media abaixo*/
     
 } 
 .title__div{
-    display: flex;
-    justify-content: space-around;
     flex-direction: column;
-    text-align: center; 
+    text-align: center;   
        
 }
 
@@ -389,13 +392,16 @@ utilize como referência os breakpoints @media abaixo*/
     
 }
 
+.title__bio{
+    display: flex;
+    justify-content: center;
+}
+
 .skills__line{
     display:flex;
     justify-content: center;
-   
 
 }
-
 
 /* formação acadêmica */
 .formacao{
@@ -406,47 +412,147 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 /*projetos*/
-
-.repositorios{
-    justify-content:space-between;
-}
-
-.experience__repo{
+.experiencie__box{
+    display: flex;
     flex-direction: column;
-    margin-left: 200px;
-    padding: 8px 16px; 
-    border-radius: 8px; 
+    gap: 5px;
 }
 
+.experience__repo
 .experience__demo{
+    display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    padding: 8px 16px; 
-    border-radius: 8px; 
-
 }
+
+
 
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 480px) {
+
 
 /*Menu*/
+.menu{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction:column-reverse;
+    padding: 10px;
+    font-weight: normal;
+    
+  
+}
+
+.menu__title{
+    display:flex;
+    justify-content:space-around;
+
+}
+
+.menu__list{
+    padding: 0;
+    display:flex;
+    justify-content:center;
+    margin-right: 10px;
+    font-size: 0.8rem;
+    
+}
 
 /*Titulo*/
+.title__div{
+    display: flex;
+    flex-direction: column; 
+            
+} 
 
-/*Sessão sobre*/
+.title__profile{
+    display: flex;
+    border-radius: 50%;
+    
+        
+} 
+
+.title__bio{
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 30px;
+}
+.title__subsection{
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 40px;
+    padding-bottom: 0;
+}
+
+/*Sobre Mim*/
+.resumo{
+    height: auto;
+    
+}
 
 /*Skills*/
-
-/*Hobbies*/
+.skills__line{
+    display:flex;
+    justify-content: center;
+    padding-right: 50px;
+}
  
 /*Formação Acadêmica*/
+.formacao{
+    height: auto;
+    padding-bottom: 30px; 
+    
+}
 
-/*Experiência Profissional*/
+.academic__courses__item__title{
+    display: flex;
+    justify-content:center;
+    padding-right: 40px;
+    font-size: 1rem;
+   
+}
+
+/*Projetos*/
+.experience__text{
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+.experience__description{
+    display: flex;
+    margin-left: 50px;
+    
+}
+
+.experience__repo,
+.experience__demo{ 
+    padding: 8px 16px; 
+    border-radius: 8px; 
+}
+
+.experiencia__botao--repo, 
+.experiencia__botao--demo{ 
+    font-size: 14px;
+}
 
  /*Contato*/
+ .formcontato__form{
+    width: 80%;
+    margin: 40px auto;
+    background-color: var(--branco);
+    padding: 30px;
+    border-radius: 10px;
 
+}
 /*Footer*/
+.title__network{
+    display: flex;
+    justify-content: center;
+}
+
 
 }

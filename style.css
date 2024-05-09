@@ -352,7 +352,62 @@ utilize como referência os breakpoints @media abaixo*/
 
 /*Desktop*/
 @media (min-width: 1281px){
+
+/* Estilos para o container do título */
+.title__div {
+    display: flex;
+    flex-direction:row-reverse;  
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title__profile {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 30px;
+    margin-right: 50px;
+ 
+}
+
+/* Estilos para o container do título */
+.title__container{
+    margin: 50px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.title__subsection{
+    text-align: center;
+   
+}
+
+/* Estilos para sessão histórico academico */
+.formacao{
+   height: auto;
+   padding-bottom: 30px;
     
+}
+
+/* Estilos para sessão projetos */
+.experience__section__title{
+    margin-top: 20px;
+    margin-bottom: 0;
+    
+}
+
+.experience__text{
+    display: flex;
+    
+}
+
+.experience__description{
+    padding-left: 300px;
+       
+}
+
+   
 }
 
 /*Tablet*/
@@ -360,48 +415,14 @@ utilize como referência os breakpoints @media abaixo*/
 
 /* Menu */
 
-.menu__title{
-    display: flex;
-      
-}
-.menu{
-    align-items: center;
-    padding: 10px;
-    font-size: 1.0rem;  
-  
-}
 
 /*title*/
-.title__profile{
-    flex-direction: column;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    align-items: center;
-    
-} 
-.title__div{
-    flex-direction: column;
-    text-align: center;   
-       
-}
+
 
 /*sessão sobre mim*/
-.resumo{
-    height: auto;
-    
-}
 
-.title__bio{
-    display: flex;
-    justify-content: center;
-}
 
-.skills__line{
-    display:flex;
-    justify-content: center;
 
-}
 
 /* formação acadêmica */
 .formacao{

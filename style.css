@@ -411,15 +411,78 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 /*Tablet*/
-@media screen and(min-width: 768px){
+@media (min-width: 768px){
 
 /* Menu */
+.menu{
+    display: flex;
+    flex-direction:column-reverse;
+    padding: 20px 0 20px 0;
+    margin: 0;
+    font-weight: normal;
 
+   
+}
 
-/*title*/
+.menu__title{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    font-size: 1.0rem;
+    padding-top: 20px;
+    
+  
 
+}
+
+.menu__list{
+    padding: 0;
+   
+    display: flex;
+    justify-content:space-around;
+    font-size: 1.0rem;
+    margin: 10px;
+
+}
+
+/*Titulo*/
+.title__div{
+   
+    flex-direction:row-reverse
+    
+    
+            
+} 
+
+.title__profile{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 24px;
+ 
+        
+} 
+
+.title__bio{
+    font-size: 1.5rem;
+   
+    padding-bottom: 10px;
+}
+.title__subsection{
+    font-size: 1.0rem;
+    text-align: center;
+    margin-left: 100px;
+    padding-top: 20px;
+}
 
 /*sessão sobre mim*/
+.about__paragraph{
+  
+   display: flex;
+   padding-bottom: 50px;
+   
+}
 
 
 

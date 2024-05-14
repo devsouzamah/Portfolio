@@ -59,7 +59,9 @@ a{
     margin-top: 0;
     margin-left: 100px;
     padding: 20px 80px;
-    position: relative;
+   
+ 
+   
   
    
 }
@@ -67,7 +69,8 @@ a{
 .menu__title{
     display: flex;
     justify-content: space-between;
-    color:var(--cherryblossompink);   
+    color:var(--cherryblossompink);
+   
     
 }
 
@@ -75,9 +78,10 @@ a{
 .menu__list{
     display: flex;
     align-items: center;
-    gap: 30px;
-    margin-right: 100px;
-    font-size: 1.0rem;
+    gap: 100px;
+    font-size: 2.0rem;
+   
+   
     
 }
 
@@ -90,8 +94,8 @@ a{
 }
 
 .title__profile {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
  
 }
@@ -272,59 +276,61 @@ a{
     font-size: 16px;
 }
 
-/* Estilos para sessão contato */
-.contato{
-    background-color: var(--timberwolf);
-    padding-bottom: 20px;
+/*Estilos para sessão contato*/ 
+.Contato{
+    background-color: var(--branco);
 }
 
-.formcontato__title{
+h2{
     display: flex;
-    justify-content: space-around;
-    color: var(--outerspace);
-    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
     font-weight: normal;
-    padding-top: 20px;
+    color: var(--outerspace);
     
 }
 
-.formcontato__form{
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     width: 100%;
     max-width: 600px;
-    margin: 40px auto;
+    margin: 0 auto;
+    padding-bottom: 30px;
     background-color: var(--branco);
-    padding: 30px;
-    border-radius: 10px;
-
+     border-radius: 8px;
 }
 
-.formcontato__input[type="text"],
-.formcontato__input[type="email"],
-.formcontato__input textarea{
-    box-sizing: border-box;
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid var(--outerspace);
-    border-radius: 4px;
-    cursor: pointer;
+label{
+    font-weight: normal;
+    margin-bottom: 5px;
+    border-radius: 5px;
     
+
 }
 
-.formcontato__botao[type="enviar"]{
-    box-sizing: border-box;
-    padding: 12px 20px;
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+button{
+    padding: 10px;
     border: none;
-    border-radius: 4px;
-    color: var(--preto);
-    background-color: var(--timberwolf);
-    font-size: 1rem;
+    color: var(--branco);
+    background-color: var(--outerspace);
+    font-size: 1.1rem;
     font-weight: normal;
     cursor: pointer;
-    display: flex;
-    margin-top: 12px; 
-  
-} 
+}   
+
 
 /*footeer*/
 .footer{

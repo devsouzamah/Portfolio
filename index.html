@@ -194,23 +194,24 @@
         </div>  
 
             <!-- Sessão de Contato -->
-            <div class="contato">
-            <section class="formcontato">
-                <div id="contato" class="formcontato__contacto">
-                    <div class="formcontato--esquerda"></div>
-                    <div class="formcontato__text">
-                        <h2 class="formcontato__title">Contato</h2>
-                        <form class="formcontato__form">
-                            <input class="formcontato__input" type="text" id="nome" placeholder="Seu Nome" oninput="nameValidate">
-                            <input class="formcontato__input" type="email" id="email" placeholder="Seu Email">
-                            <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                            <button class="formcontato__botao" type="enviar">Enviar mensagem</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
+            <div class="Contato">
+            <h2 class="formcontato__title">Contato</h2>
+            <form id="form">
+                <label for="name">Nome</label>
+                <input type="text" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+                <button type="submit" >Enviar</button>
+            </form>
             </div>
+                 
             <!-- Sessão de Footer/Rodapé-->
             <section class="footer">
                 <div class="footer__rodape">
@@ -226,6 +227,9 @@
         <!-- Script Linkado do seu documento de JavaScript -->
        <script src="validate.js"></script>
        
+      
+
+ 
       
   
     </body>

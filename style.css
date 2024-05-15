@@ -302,7 +302,7 @@ form{
     margin: 0 auto;
     padding-bottom: 30px;
     background-color: var(--branco);
-     border-radius: 8px;
+    border-radius: 8px;
 }
 
 label{
@@ -355,6 +355,36 @@ utilize como referência os breakpoints @media abaixo*/
 
 /*Desktop*/
 @media (min-width: 1281px){
+
+/*Sessão Menu*/
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 100px;
+    padding: 20px 80px;
+   
+}
+
+.menu__title{
+    display: flex;
+    justify-content: space-between;
+    color:var(--cherryblossompink);
+   
+    
+}
+
+/* Estilos para a lista do menu */
+.menu__list{
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+
 
 /* Estilos para o container do título */
 .title__div {
@@ -447,8 +477,9 @@ utilize como referência os breakpoints @media abaixo*/
     padding: 0;
     display: flex;
     justify-content:space-around;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     margin: 10px;
+    gap: 25px;
 
 }
 
@@ -543,9 +574,12 @@ utilize como referência os breakpoints @media abaixo*/
 
 
 /*Menu*/
+body{
+    width: 100vw;
+}
+
 .menu{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     margin: 0;
     display: flex;
     flex-direction:column-reverse;
@@ -562,12 +596,11 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 .menu__list{
-    padding: 0;
-    display:flex;
-    justify-content:center;
-    margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
     font-size: 0.8rem;
-    
+    padding: 0;
 }
 
 /*Titulo*/
@@ -580,6 +613,8 @@ utilize como referência os breakpoints @media abaixo*/
 .title__profile{
     display: flex;
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
     
         
 } 
@@ -604,7 +639,16 @@ utilize como referência os breakpoints @media abaixo*/
     
 }
 
+.about__title{
+    font-size: 1.5rem;
+}
+
 /*Skills*/
+
+.skills__title{
+    font-size: 1.8rem;
+}
+
 .skills__line{
     display:flex;
     justify-content: center;
@@ -618,6 +662,11 @@ utilize como referência os breakpoints @media abaixo*/
     
 }
 
+.academic__title{
+   font-size: 1.8rem;
+   
+}
+
 .academic__courses__item__title{
     display: flex;
     justify-content:center;
@@ -627,6 +676,10 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 /*Projetos*/
+
+.experience__section__title{
+    font-size: 1.8rem;
+}
 .experience__text{
     font-size: 1.0rem;
     text-align: center;
@@ -650,9 +703,13 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
  /*Contato*/
- .formcontato__form{
+
+.formcontato__title{
+    font-size: 1.8rem;
+}
+
+form{
     width: 80%;
-    margin: 40px auto;
     background-color: var(--branco);
     padding: 30px;
     border-radius: 10px;
